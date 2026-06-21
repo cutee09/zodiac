@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Pengiraan Zodiak Cina</title>
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript" src=""></script>
+
+</head> 
+
+<body>
+    <h1>Pengiraan Zodiak Cina</h1>
+
+    Masukkan Tahun Lahir :
+    <input type="number" id="tahun">
+    <button onclick="kiraZodiak()">Kira</button>
+    <br><br>
+    <p id="hasil"></p>
+    <img id="imej" width="200" onmouseover="besar()" onmouseout="kecil()"> 
+
+
+</body>
+<script>
+       function kiraZodiak() {
+            var tahun= document.getElementById("tahun").value;
+            var baki = tahun % 12;
+            var zodiak = "";
+            var gambar ="";
+            if (baki == 0) {
+                zodiak = "monyet";
+                gambar = "Monkey.png";
+                document.getElementById("hasil").innerHTML = "Zodiak Cina anda ialah " + zodiak;
+                document.getElementById("imej").src = gambar;
+            }
+            else if (baki == 1) {
+                zodiak = "ayam";
+                gambar = "Rooster.png";
+                document.getElementById("hasil").innerHTML = "Zodiak Cina anda ialah " + zodiak;
+                document.getElementById("imej").src = gambar;
+            }
+         else if (baki == 2) {
+                zodiak = "anjing";
+                gambar = "Dog.png";
+                document.getElementById("hasil").innerHTML = "Zodiak Cina anda ialah " + zodiak;
+                document.getElementById("imej").src = gambar;
+            }
+            else if (baki == 3) {
+                zodiak = "babi";
+                gambar = "Pig.png";
+                document.getElementById("hasil").innerHTML = "Zodiak Cina anda ialah " + zodiak;
+                document.getElementById("imej").src = gambar;
+            }
+            else if (baki == 4) {
+                zodiak = "tikus";
+                gambar = "Rat.png";
+                document.getElementById("hasil").innerHTML = "Zodiak Cina anda ialah " + zodiak;
+                document.getElementById("imej").src = gambar;
+            }
+            else if (baki == 5) {
+                zodiak = "lembu";
+                gambar = "Ox.png";
+                document.getElementById("hasil").innerHTML = "Zodiak Cina anda ialah " + zodiak;
+                document.getElementById("imej").src = gambar;
+            }
+            else if (baki == 6) {
+                zodiak = "harimau";
+                gambar = "Tiger.png";
+                document.getElementById("hasil").innerHTML = "Zodiak Cina anda ialah " + zodiak;
+                document.getElementById("imej").src = gambar;
+            }
+            else if (baki == 7) {
+                zodiak = "arnab";
+                gambar = "Rabbit.png";
+                document.getElementById("hasil").innerHTML = "Zodiak Cina anda ialah " + zodiak;
+                document.getElementById("imej").src = gambar;
+            }
+            else if (baki == 8 ) {
+                zodiak = "naga";
+                gambar = "Dragon.png";
+                document.getElementById("hasil").innerHTML = "Zodiak Cina anda ialah " + zodiak;
+                document.getElementById("imej").src = gambar;
+            }
+            else if (baki == 9) {
+                zodiak = "ular";
+                gambar = "Snake.png";
+                document.getElementById("hasil").innerHTML = "Zodiak Cina anda ialah " + zodiak;
+                document.getElementById("imej").src = gambar;
+            }
+            else if (baki == 10) {
+                zodiak = "kuda";
+                gambar = "Horse.png";
+                document.getElementById("hasil").innerHTML = "Zodiak Cina anda ialah " + zodiak;
+                document.getElementById("imej").src = gambar;
+            }
+            else   {
+                zodiak = "kambing";
+                gambar = "Sheep.png";
+                document.getElementById("hasil").innerHTML = "Zodiak Cina anda ialah " + zodiak;
+                document.getElementById("imej").src = gambar;
+            }
+        }
+
+        function besar() {
+            document.getElementById("imej").width = 300;
+        }
+        function kecil() {
+            document.getElementById("imej").width = 200;
+            
+        }
+    </script>
+</html>
